@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>廣色域印刷介紹</title>
+  <style type="text/css">
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      height: 100vh;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .vertical-title {
+      display: flex;
+      flex-direction: column;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-weight: bold;
+      font-size: 24px;
+      color: #000;
+      margin-right: 30px;
+      transform: translateY(-2em);
+      line-height: 0.5em;
+    }
+
+    .vertical-title span:nth-child(2) {
+      padding-top: 0.5em;
+      padding-right: 1em;
+    }
+
+    .content {
+      max-width: 600px;
+      font-size: 16px;
+      line-height: 1.5em;
+      color: #000;
+    }
+
+    .content p {
+      margin: 0 0 1em 0;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+      }
+
+      .vertical-title {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        transform: none;
+      }
+
+      .vertical-title span:nth-child(2) {
+        padding-right: 0;
+        padding-top: 0;
+      }
+
+      .content {
+        font-size: 15px;
+        line-height: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="vertical-title">
+      <span>廣色域印刷</span>
+      <span>&emsp;細節與真實兼具</span>
+    </div>
+    <div class="content">
+      <p>透過七色印刷系統擴展色域表現，可精準處理特殊色、金屬色與高階影像，提升整體印刷品質與品牌識別度。</p>
+      <p>適用於對色彩有高度要求的產品包裝，確保印刷結果與設計原稿高度一致。</p>
+    </div>
+  </div>
+</body>
+</html>
